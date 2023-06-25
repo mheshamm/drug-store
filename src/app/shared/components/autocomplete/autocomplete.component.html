@@ -1,0 +1,23 @@
+<form [formGroup]="form">
+  <mat-form-field appearance="standard">
+    <mat-label *ngIf="label">{{label}}</mat-label>
+    <input
+      type="text"
+      [placeholder]="placeholder"
+      aria-label="Number"
+      matInput
+      formControlName="search"
+      [matAutocomplete]="auto"
+      (input)="onInput($event)"
+      (blur)="onTouchInput($event)"
+    />
+    <mat-autocomplete (optionSelected)="onSelectOption($event)" [displayWith]="getOptionText"  #auto="matAutocomplete">
+      <mat-option
+        *ngFor="let option of filteredOptions | async"
+        [value]="option"
+      >
+        {{ option.dropDownDisplayedName }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>

@@ -1,0 +1,14 @@
+<div class="flex flex-wrap gap-5 p-10 w-full rounded-sm bg-grey-100">
+  <!-- start breadcrumb item -->
+  <ng-container *ngFor="let breadcrumb of breadcrumbItems$ | async; let last = last; ">
+    <div class="flex items-center gap-1 text-blue-500">
+      <mat-icon class="text-[16px] w-[18px] h-[18px] text-blue-500" *ngIf="breadcrumb?.icon">{{breadcrumb?.icon}}</mat-icon>
+      <a [routerLink]="breadcrumb.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">
+        {{ breadcrumb.label ?  breadcrumb.label : "-" }}
+      </a>
+      <!-- hide separator if is last -->
+      <span *ngIf="!last">/</span>
+    </div>
+  </ng-container>
+  <!-- end breadcrumb item -->
+</div>

@@ -1,0 +1,68 @@
+{
+  "drugs": [
+    {
+      "id": 1,
+      "name": "Drug 1",
+      "quantity": 5,
+      "status": "Available",
+      "expiration": "25/8/2023",
+      "price": 10,
+      "currency": "$"
+    },
+    {
+      "id": 2,
+      "name": "Drug 2",
+      "quantity": 50,
+      "status": "Available",
+      "expiration": "25/9/2023",
+      "price": 20,
+      "currency": "$"
+    },
+    {
+      "id": 3,
+      "name": "Drug 3",
+      "quantity": 45,
+      "status": "Available",
+      "expiration": "25/10/2023",
+      "price": 15,
+      "currency": "$"
+    },
+    {
+      "id": 4,
+      "name": "Drug 4",
+      "quantity": 52,
+      "status": "Available",
+      "expiration": "25/7/2023",
+      "price": 230,
+      "currency": "$"
+    },
+    {
+      "id": 5,
+      "name": "Drug 5",
+      "quantity": 0,
+      "status": "Not-Available",
+      "expiration": "25/7/2023",
+      "price": 56,
+      "currency": "$"
+    },
+    {
+      "id": 6,
+      "name": "Drug 6",
+      "quantity": 50,
+      "status": "Available",
+      "expiration": "25/8/2023",
+      "price": 80,
+      "currency": "$"
+    },
+    {
+      "id": 7,
+      "name": "Drug 7",
+      "quantity": 2,
+      "status": "Available",
+      "expiration": "25/8/2023",
+      "price": 8,
+      "currency": "$"
+    }
+
+  ]
+}

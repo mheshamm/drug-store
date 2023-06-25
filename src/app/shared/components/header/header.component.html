@@ -1,0 +1,53 @@
+<header class="h-20 bg-white border-b-2 border-grey-500">
+  <nav class="relative px-8 py-4">
+
+    <div class="container mx-auto flex justify-between items-center">
+        <img  class="block h-14 w-14" src="../../../../assets/images/logo.png" alt="logo">
+
+        <ul class="hidden md:flex space-x-6">
+          <li class="hover:border-blue-500 hover:border-b-2 cursor-pointer"><a >Home</a></li>
+          <li class="hover:border-blue-500 hover:border-b-2 cursor-pointer"><a >Administration</a></li>
+          <li class="hover:border-blue-500 hover:border-b-2 cursor-pointer"><a >Vision</a></li>
+          <li class="hover:border-blue-500 hover:border-b-2 cursor-pointer"><a >Some Text</a></li>
+        </ul>
+        <div class="flex gap-8 justify-center items-center">
+
+          <div class="hidden md:flex gap-4 justify-center items-center hover:bg-gray-100 h-full p-2">
+            <img class="block h-6 w-6" src="../../../../assets/images/logo.png" alt="">
+            <span>Pharmacy Name </span>
+          </div>
+          <div class="hidden md:block gap-2 justify-center items-center">
+            <mat-icon>notifications</mat-icon>
+          </div>
+          <a class="hidden md:block bg-green-500 px-5 py-1 rounded-3xl hover:bg-green-600 text-white hidden md:flex" role="button">Order Now</a>
+        </div>
+
+      <!-- Mobile menu icon -->
+      <div class="md:hidden flex gap-4">
+        <mat-icon>notifications</mat-icon>
+        <button (click)="onOpenMenu()" id="mobile-icon" class="md:hidden">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+
+      </div>
+
+    <!-- Mobile menu -->
+    <div class="md:hidden flex justify-center mt-3 w-full ">
+      <div [ngClass]="isMenuOpen ? 'block' : 'active'" id="mobile-menu" class="mobile-menu absolute top-23 w-full z-100">
+        <div class=" flex gap-4 justify-center items-center hover:bg-gray-100 h-full p-2">
+          <img class="block h-6 w-6" src="../../../../assets/images/logo.png" alt="">
+          <span>Pharmacy Name </span>
+        </div>
+        <ul class="bg-gray-100 shadow-lg leading-9 font-bold ">
+          <li class="border-b-2 border-white hover:bg-blue-400 hover:text-white pl-4"><a href="https://google.com" class="block pl-7">Home</a></li>
+          <li class="border-b-2 border-white hover:bg-blue-400 hover:text-white pl-4"><a href="#" class="block pl-7">Administration</a></li>
+          <li class="border-b-2 border-white hover:bg-blue-400 hover:text-white pl-4"><a href="#" class="block pl-7">Some Text</a></li>
+          <li class="border-b-2 border-white hover:bg-blue-400 hover:text-white pl-4"><a href="#" class="block pl-7">Some Text</a></li>
+        </ul>
+
+        </div>
+    </div>
+
+  </nav>
+</header>

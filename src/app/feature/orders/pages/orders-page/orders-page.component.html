@@ -1,0 +1,4 @@
+<div class="flex flex-col gap-5">
+  <app-create-order (addOrder)="onGetOrder($event)"></app-create-order>
+  <app-table (rowActionData)="onActionClicked($event)" [tableColumns]="tableColumns" [tableData]="tableData" [buttons]="tableButtons"></app-table>
+</div>

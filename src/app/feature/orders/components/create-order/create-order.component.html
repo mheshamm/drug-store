@@ -1,0 +1,8 @@
+ <div class="md:w-[50%]">
+  <form class="m-x-5 flex justify-center gap-2 w-full" [formGroup]="form">
+    <app-autocomplete [data]="data" formControlName="drug"></app-autocomplete>
+      <input class="h-[36px] w-[100px] outline-none rounded-sm" placeholder="Quantity"  formControlName="quantity"  type="number" />
+      <button (click)="onCreateOrder()" class="h-[36px] bg-blue-600 text-white rounded-sm w-[50px] hover:border-2 hover:border-white cursor-pointer ">Add</button>
+  </form>
+</div>
+
